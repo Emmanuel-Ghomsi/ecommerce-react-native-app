@@ -1,50 +1,90 @@
-# Welcome to your Expo app 👋
+# Application E-commerce en React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Description
 
-## Get started
+Cette application e-commerce a été développée en utilisant React Native, basée sur les APIs fournies par [dummyjson.com](https://dummyjson.com/docs). Elle permet aux utilisateurs de naviguer, consulter et acheter des produits via une interface mobile intuitive et performante.
 
-1. Install dependencies
+## Fonctionnalités
 
+- Page d’accueil
+- Affichage des produits de la catégorie (TOP) dans un slider
+- Voir les catégories disponibles
+- Mise en valeur des produits d'une catégorie de choix
+- Consultation des produits par catégorie
+- Consultation de la page d’un produit
+- Ajout de produits dans un panier
+- Consultation du panier en cours
+- Enregistrement d'un panier
+- Connexion/Inscription
+- Consultation des paniers d’un utilisateur
+
+## Technologies Utilisées
+
+### Framework et Outils Principaux
+
+- **React Native** : Framework pour le développement d'applications mobiles cross-platform.
+- **Expo** : Outils et services intégrés pour simplifier le développement avec React Native. [Documentation](https://docs.expo.dev/)
+- **React Navigation** : Librairie pour la gestion de la navigation dans les applications React Native. [Documentation](https://reactnavigation.org/docs/native-stack-navigator/)
+
+### Bibliothèques et Modules
+
+- **react-native-async-storage** : Utilisé pour stocker les données localement sur l'appareil de l'utilisateur.
+- **react-native-elements** : Composants UI prêts à l'emploi pour une interface utilisateur rapide et efficace.
+- **react-native-slider** : Pour créer le slider affichant les produits de la catégorie TOP.
+
+## Choix des Technologies
+
+### React Native
+
+React Native permet de créer des applications mobiles pour iOS et Android à partir d'une seule base de code, ce qui réduit considérablement le temps de développement et les coûts de maintenance.
+
+### Expo
+
+Expo facilite le développement avec React Native en fournissant un environnement de développement rapide, des outils de déploiement simples et une grande bibliothèque de composants et d'APIs pré-intégrés.
+
+### React Navigation
+
+React Navigation est la solution de navigation de facto pour React Native, offrant des transitions fluides et une gestion efficace de l'historique de navigation.
+
+### react-native-async-storage
+
+react-native-async-storage est utilisé pour gérer le stockage local de données de manière asynchrone, ce qui est crucial pour des fonctionnalités telles que le panier en cours et les informations de session utilisateur.
+
+### react-native-elements
+
+Cette bibliothèque offre une large gamme de composants UI prêts à l'emploi, permettant une conception rapide et une uniformité visuelle dans toute l'application.
+
+## Installation et Lancement du Projet
+
+### Prérequis
+
+- Node.js
+- npm ou yarn
+- Expo CLI
+
+### Installation
+
+1. Clonez le dépôt GitHub :
    ```bash
+   git clone https://github.com/Emmanuel-Ghomsi/ecommerce-react-native-app.git
+   ```
+
+2. Installez les dépendances :
+   ```bash
+   cd ecommerce-react-native-app
    npm install
+   # ou
+   yarn install
    ```
 
-2. Start the app
-
+3. Installez Expo CLI si ce n'est pas déjà fait :
    ```bash
-    npx expo start
+   npm install -g expo-cli
    ```
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. Lancer le Projet
+      
+   Démarrez le projet Expo :
+   ```bash
+   expo start
+   ```
