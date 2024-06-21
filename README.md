@@ -87,14 +87,11 @@ Cette bibliothèque est un plugin babel qui permet d'injecter des variables d'en
    yarn install
    ```
 
-3. Installez Expo CLI si ce n'est pas déjà fait :
-   ```bash
-   npm install -g expo-cli
-   ```
-
-4. Lancer le Projet
+5. Lancer le Projet
       
    Démarrez le projet Expo :
    ```bash
-   expo start
+   npm start
+   # ou
+   yarn start
    ```

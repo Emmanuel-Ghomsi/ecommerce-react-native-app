@@ -1,6 +1,6 @@
 import { useCartStore } from "@/hooks/useCardStore";
 import { Product } from "@/types/next";
-import React, { useEffect, useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { View, Text, Button, FlatList, StyleSheet } from "react-native";
 
 export function Cart({ navigation }: any) {
