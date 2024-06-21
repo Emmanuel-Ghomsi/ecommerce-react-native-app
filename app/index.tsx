@@ -9,7 +9,7 @@ import { CartIcon } from "@/components/CartIcon";
 
 const Stack = createNativeStackNavigator();
 
-function App() {
+export default function Page() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -49,4 +49,3 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
 });
-export default App;
