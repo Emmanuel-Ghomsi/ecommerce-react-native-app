@@ -8,8 +8,8 @@ import {
   Button,
   StyleSheet,
 } from "react-native";
-import { fetchProduct } from "@/actions/product.js";
-import { useCartStore } from "@/hooks/useCardStore.js";
+import { fetchProduct } from "@/actions/product";
+import { useCartStore } from "@/hooks/useCardStore";
 
 export function ProductDetails({ route }: any) {
   const { productId } = route.params;

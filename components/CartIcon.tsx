@@ -1,9 +1,9 @@
-import { CartContext } from "@/app/cart_context";
+import { useCartStore } from "@/hooks/useCardStore";
 import React, { useContext } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
 export function CartIcon({ navigation }: { navigation: any }) {
-  const { getItemsCount } = useContext(CartContext);
+  const { counter } = useCartStore();
   return (
     <View style={styles.container}>
       <Text
@@ -12,7 +12,7 @@ export function CartIcon({ navigation }: { navigation: any }) {
           navigation.navigate("Cart");
         }}
       >
-        Cart ({getItemsCount()})
+        Cart ({counter})
       </Text>
     </View>
   );

@@ -1,10 +1,10 @@
 import React, { PropsWithoutRef, useEffect, useState } from "react";
 import { View, Text, FlatList, StyleSheet } from "react-native";
-import { ProductComponent } from "@/components/ProductComponent.js";
+import { ProductComponent } from "@/components/ProductComponent";
 import { Product } from "@/types/next";
 import { fetchProducts } from "@/actions/product";
 
-export function ProductsList({ navigation }: any) {
+export function ProductList({ navigation }: any) {
   function renderProduct({ item }: { item: Product }) {
     return (
       <ProductComponent
