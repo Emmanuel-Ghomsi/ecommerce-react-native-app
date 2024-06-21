@@ -25,12 +25,14 @@ Cette application e-commerce a été développée en utilisant React Native, bas
 - **React Native** : Framework pour le développement d'applications mobiles cross-platform.
 - **Expo** : Outils et services intégrés pour simplifier le développement avec React Native. [Documentation](https://docs.expo.dev/)
 - **React Navigation** : Librairie pour la gestion de la navigation dans les applications React Native. [Documentation](https://reactnavigation.org/docs/native-stack-navigator/)
+- **Zustand** : Gestion des états réactive et intuitive. [Documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)
 
 ### Bibliothèques et Modules
 
 - **react-native-async-storage** : Utilisé pour stocker les données localement sur l'appareil de l'utilisateur.
 - **react-native-elements** : Composants UI prêts à l'emploi pour une interface utilisateur rapide et efficace.
 - **react-native-slider** : Pour créer le slider affichant les produits de la catégorie TOP.
+- **react-native-dotenv** : Pour la création et la gestion des variables d'environnement.
 
 ## Choix des Technologies
 
@@ -46,6 +48,10 @@ Expo facilite le développement avec React Native en fournissant un environnemen
 
 React Navigation est la solution de navigation de facto pour React Native, offrant des transitions fluides et une gestion efficace de l'historique de navigation.
 
+### Zustand
+
+Zustand offre une gestion des états intuitive et légère, idéale pour les applications de petite à moyenne taille comme celle-ci.
+
 ### react-native-async-storage
 
 react-native-async-storage est utilisé pour gérer le stockage local de données de manière asynchrone, ce qui est crucial pour des fonctionnalités telles que le panier en cours et les informations de session utilisateur.
@@ -53,6 +59,10 @@ react-native-async-storage est utilisé pour gérer le stockage local de donnée
 ### react-native-elements
 
 Cette bibliothèque offre une large gamme de composants UI prêts à l'emploi, permettant une conception rapide et une uniformité visuelle dans toute l'application.
+
+### react-native-dotenv
+
+Cette bibliothèque est un plugin babel qui permet d'injecter des variables d'environnement dans notre environnement javascript. Nous le déclarons comme plugin dans notre fichier.
 
 ## Installation et Lancement du Projet
 
